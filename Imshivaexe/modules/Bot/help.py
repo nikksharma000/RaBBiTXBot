@@ -217,13 +217,13 @@ BACK = IKM(
        ]
        )
 
-BACK_BUTTON = IKM(
-              [
-              [
-              IKB("➡️", callback_data="backup")
-              ]
-              ]
-              )
+X = IKM(
+    [
+    [
+    IKB("➡️", callback_data="x")
+    ]
+    ]
+    )
 
 @Bunny.on_message(filters.command("help", hl))
 async def help(client, message):
@@ -326,7 +326,7 @@ async def pange(client, message):
     await message.answer()
     await message.edit_message_text(text=HELP_TEXTT, reply_markup=HELP_BUTTON)
 
-@Bot.on_callback_query(filters.regex("backup"))
+@Bot.on_callback_query(filters.regex("x"))
 async def pange(client, message):
     if message.from_user.id != Bunny.me.id:
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
@@ -345,11 +345,11 @@ async def pange(client, message):
     if message.from_user.id != Bunny.me.id:
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
-    await message.edit_message_text(text=PM_MSG, reply_markup=BACK_BUTTON)
+    await message.edit_message_text(text=PM_MSG, reply_markup=X)
 
 @Bot.on_callback_query(filters.regex("news"))
 async def pange(client, message):
     if message.from_user.id != Bunny.me.id:
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
-    await message.edit_message_text(text=NEWS_MSG, reply_markup=BACK_BUTTON)
+    await message.edit_message_text(text=NEWS_MSG, reply_markup=X)
