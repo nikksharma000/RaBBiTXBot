@@ -1,0 +1,40 @@
+{
+    "name": "RaBBiTX UserBot",
+    "description": "RaBBItX Userbot is most advance and stable userbot on telegram || based on pyrogram || deploy and enjoy !!",
+    "keywords": ["pyrogram", "RaBBITXUserBot", "Imshivaexe", "UserBot"],
+    "repository": "https://github.com/Imshivaexe/RaBBiTUserBot",
+  "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "get this value from my.telegram.org",
+            "required": true,
+            "value": "21455847"
+        },
+        "API_HASH": {
+            "description": "get this value from my.telegram.org",
+            "required": true,
+            "value": "8362067b5445fd55efd6b70d78f97fbd"
+        },
+        "SESSION": {
+            "description": "get this value from reblit",
+            "required": true,
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "get this value by @Botfather on telegram",
+            "required": true,
+            "value": ""
+        },
+        "HANDLER": {
+            "description": "fill here your commands trigger",
+            "required": true,
+            "value": "."
+        },
+        "MONGO_URI": {
+            "description": "fill here your mongodb database url",
+            "required": true,
+            "value": ""
+        }
+
+    }
+}
