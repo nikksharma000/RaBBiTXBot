@@ -26,3 +26,12 @@
 ## Features 
 
 >    we will provide docs soon..
+
+## Credits 💖
+- [Shiva](https://t.me/lmshivaexe)
+- [Pratham](https://t.me/notrealgeek)
+
+## Support / Updates
+
+<p align="center"><a href="https://t.me/RoBotxsupport"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-sᴜᴘᴘᴏʀᴛ-back?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+<p align="center"><a href="https://t.me/Robotxupdates"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ᴜᴘᴅᴀᴛᴇs-back?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
