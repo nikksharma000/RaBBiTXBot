@@ -103,6 +103,8 @@ OTHER_MSG = f"""
 ๏ `{hl}utweet` » to make tweet by username..!!
 
 ๏ {hl}f<action> » fake action > `{hl}ftyping`
+
+๏ `{hl}create group/channel (name)` » to create..!!
 """
 
 LOVE_MSG = f"""
@@ -121,6 +123,21 @@ LOVE_MSG = f"""
 FUN_MSG = f"""
 **Fun Commands**
 
+๏ `{hl}lover` » 
+
+๏ `{hl}stupid` » 
+
+๏ `{hl}iloveu` » 
+
+๏ `{hl}sex` » 
+
+๏ `{hl}kiss` » 
+
+๏ `{hl}slap` » 
+
+๏ `{hl}dare` » 
+
+๏ `{hl}truth` » 
 """
 
 HELP_BUTTON = IKM(
@@ -142,7 +159,7 @@ HELP_BUTTON = IKM(
               IKB("๏ convert ๏", callback_data='convert')
               ],
               [
-              IKB("๏ join ๏", callback_data='join')
+              IKB(" Home 🏠", callback_data='join')
               ]
               ]
               )
@@ -180,6 +197,14 @@ BACK = IKM(
        ]
        ]
        )
+
+BACK_BUTTON = IKM(
+              [
+              [
+              IKB("➡️", callback_data="backup")
+              ]
+              ]
+              )
 
 @Bunny.on_message(filters.command("help", hl))
 async def help(client, message):
@@ -281,3 +306,17 @@ async def pange(client, message):
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
     await message.edit_message_text(text=HELP_TEXTT, reply_markup=HELP_BUTTON)
+
+@Bot.on_callback_query(filters.regex("backup"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=HELP_TEXTT, reply_markup=HELP_BUTTON)
+
+@Bot.on_callback_query(filters.regex("fun"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=FUN_MSG, reply_markup=BACK)
