@@ -14,3 +14,10 @@
 - [TOKEN](https://t.me/Botfather)
 - [SESSION](https://t.me/Imshivaexe)
 - [MONGO_URI](https://mongodb.com)
+
+
+## Development 
+
+Heroku Development currently
+
+<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/Imshivaexe/RaBBiTXBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
