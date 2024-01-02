@@ -35,3 +35,19 @@
 
 <p align="center"><a href="https://t.me/RoBotxsupport"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-sᴜᴘᴘᴏʀᴛ-back?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
 <p align="center"><a href="https://t.me/Robotxupdates"><img src="https://img.shields.io/badge/ᴛᴇʟᴇɢʀᴀᴍ-ᴜᴘᴅᴀᴛᴇs-back?&style=for-the-badge&logo=telegram" width="220" height="38.45"></a></p>
+
+
+```console
+      ⚠️ WARNING FOR YOU ⚠️
+       Your Telegram account may get banned.
+   I am not responsible for any improper use of this bot
+This bot is intended for the purpose of having fun with memes,
+      as well as efficiently managing groups.
+You ended up spamming groups, getting reported left and right,
+and you ended up in a Finale Battle with Telegram and at the end
+       Telegram Team deleted your account?
+  And after that, then you pointed your fingers at us
+        for getting your acoount deleted?
+    I will be rolling on the floor laughing at you.
+```
+
