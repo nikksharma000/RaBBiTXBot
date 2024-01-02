@@ -158,6 +158,14 @@ NEWS_MSG = f"""
 ๏ `{hl}weather (city name)` » to get weather information..!!
 """
 
+CONVERT_MSG = f"""
+
+๏ `{hl}tts` » to convert text to voice..!!
+
+๏ `{hl}getsticker` » to convert sticker to midea..!!
+
+๏ `{hl}kang` » to convert midea to sticker..!!
+"""
 
 HELP_BUTTON = IKM(
               [
