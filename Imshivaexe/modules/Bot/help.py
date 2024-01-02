@@ -123,21 +123,21 @@ LOVE_MSG = f"""
 FUN_MSG = f"""
 **Fun Commands**
 
-๏ `{hl}lover` » 
+๏ `{hl}lover` » check by yourself..!!
 
-๏ `{hl}stupid` » 
+๏ `{hl}stupid` » check by yourself..!!
 
-๏ `{hl}iloveu` » 
+๏ `{hl}iloveu` » check by yourself..!!
 
-๏ `{hl}sex` » 
+๏ `{hl}sex` » check by yourself..!!
 
-๏ `{hl}kiss` » 
+๏ `{hl}kiss` » check by yourself..!!
 
-๏ `{hl}slap` » 
+๏ `{hl}slap` » check by yourself..!!
 
-๏ `{hl}dare` » 
+๏ `{hl}dare` » check by yourself..!!
 
-๏ `{hl}truth` » 
+๏ `{hl}truth` » check by yourself..!!
 """
 
 HELP_BUTTON = IKM(
