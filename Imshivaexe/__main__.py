@@ -22,6 +22,7 @@ async def start_user():
       pass
     try:
      await Bunny.send_message(LOGGER_ID, "__**ѕтαятє∂ !!**__")
+     await Bot.send_message(LOGGER_ID, "__**ѕтαятє∂ !!**__")
     except:
       pass
     await idle()
