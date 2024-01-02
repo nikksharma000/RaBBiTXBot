@@ -10,7 +10,7 @@ async def gcch(client: Client, message: Message):
     group_type = message.command[1]
     split = message.command[2:]
     group_name = " ".join(split)
-    bunny = await edit_or_reply(message, "`Processing...`")
+    bunny = await message.edit("`Processing...`")
     fuk = """𝐁ʏ ~ © @RoBotXUpdates
 ╭──────────────────๏
 ๏
