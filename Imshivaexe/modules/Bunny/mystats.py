@@ -1,13 +1,12 @@
 from datetime import datetime
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
-from Imshivaexe.modules.Bunny.eor import eor
 from config import HANDLER as hl
 from Imshivaexe import Bunny
 
 @Bunny.on_message(filters.command(["mystats", "mystatus"], hl) & filters.me)
 async def stats(client: Client, message: Message):
-    bunny = await eor(message, "`¢σℓℓє¢тιиg ѕтαтѕ...⚡`")
+    bunny = await message.edit("`¢σℓℓє¢тιиg ѕтαтѕ...⚡`")
     start = datetime.now()
     u = 0
     g = 0
