@@ -361,3 +361,11 @@ async def pange(client, message):
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
     await message.edit_message_text(text=NEWS_MSG, reply_markup=X)
+
+
+@Bot.on_callback_query(filters.regex("convert"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=CONVERT_MSG, reply_markup=X)
