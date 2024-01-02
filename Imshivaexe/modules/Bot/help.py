@@ -9,7 +9,8 @@ from pyrogram.types import InlineQueryResultPhoto as IQRP
 
 PIC = HELP_PIC
 
-HELP_TEXT = "**๏ ᴛʜɪs ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍeɴᴜ ᴏғ ʀᴀʙʙɪᴛx ᴜsᴇʀʙᴏᴛ**\n\n**๏ __RaBBiTX UserBot loaded with 150+ Commands 🍷**__\n\n๏ **__By © @ITZ_RaBBiTX** 🥂"
+HELP_TEXT = "**๏ ᴛʜɪs ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍeɴᴜ ᴏғ ʀᴀʙʙɪᴛx ᴜsᴇʀʙᴏᴛ**\n\n**๏ __RaBBiTX UserBot loaded with 150+ Commands 🍷**__\n\n๏ **__By © @ITZ_RaBBiTX** 🥂\n\n**๏ page** ~ `1/2`"
+HELP_TEXTT = "**๏ ᴛʜɪs ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍeɴᴜ ᴏғ ʀᴀʙʙɪᴛx ᴜsᴇʀʙᴏᴛ**\n\n**๏ __RaBBiTX UserBot loaded with 150+ Commands 🍷**__\n\n๏ **__By © @ITZ_RaBBiTX** 🥂\n\n**๏ page** ~ `2/2`"
 
 ADMINS_MSG = f"""
 **Admins commands**
@@ -117,6 +118,36 @@ LOVE_MSG = f"""
 
 """
 
+FUN_MSG = f"""
+**Fun Commands**
+
+"""
+
+HELP_BUTTON = IKM(
+              [
+              [
+              IKB("๏ Pmpermit ๏", callback_data='pmpermit'),
+              IKB("๏ News ๏", callback_data='news')
+              ],
+              [
+              IKB("๏ Important ๏", callback_data='important'),
+              IKB("๏ Create ๏", callback_data='create')
+              ],
+              [
+              IKB("๏ Q ๏", callback_data='q'),
+              IKB("๏ Instagram ๏", callback_data='insta')
+              ],
+              [
+              IKB("๏ info ๏", callback_data='info'),
+              IKB("๏ convert ๏", callback_data='convert')
+              ],
+              [
+              IKB("๏ join ๏", callback_data='join')
+              ]
+              ]
+              )
+
+                
 HELP_MARKUP = IKM(
               [
               [
@@ -132,11 +163,11 @@ HELP_MARKUP = IKM(
               IKB("๏ Profile ๏", callback_data="pro")
               ],
               [
-              IKB("๏ Other ๏", callback_data="other")
+              IKB("๏ Other ๏", callback_data="other"),
+              IKB("๏ Fun ๏", callback_data='fun')
               ],
               [
-              IKB("⬅️", callback_data="left"),
-              IKB("➡️", callback_data="right")
+              IKB("2nd page 📃", callback_data="2page")
               ]
               ]
               )
@@ -230,9 +261,23 @@ async def profile(client, message):
     await message.answer()
     await message.edit_message_text(text=ACC_MSG, reply_markup=BACK)
 
+@Bot.on_callback_query(filters.regex("fun"))
+async def profile(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=FUN_MSG, reply_markup=BACK)
+
 @Bot.on_callback_query(filters.regex("other"))
 async def profile(client, message):
     if message.from_user.id != Bunny.me.id:
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
     await message.edit_message_text(text=OTHER_MSG, reply_markup=BACK)
+
+@Bot.on_callback_query(filters.regex("2page"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=HELP_TEXTT, reply_markup=HELP_BUTTON)
