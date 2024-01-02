@@ -15,7 +15,7 @@ async def tweet(client: Client, message: Message):
         else:
             await message.edit(f"**๏ ᴜsᴀɢᴇ »** \n\n `{hl}utweet ᴜsᴇʀɴᴀᴍᴇ:ᴛᴇxᴛ`")
             return
-    if len(stark) != 2:
+    if len(message.command) < 2:
         await message.edit(f"**๏ ᴜsᴀɢᴇ »** `{hl}utweet ᴜsᴇʀɴᴀᴍᴇ:ᴛᴇxᴛ`")
         return
     tony = stark[0]
