@@ -5,3 +5,12 @@
 ## Repo Stats
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Imshivaexe&repo=RaBBiTXBot&theme=dark)
+
+
+## Requirements 
+
+- [API_ID](https://my.telegram.org)
+- [API_HASH](https://my.telegram.org)
+- [TOKEN](https://t.me/Botfather)
+- [SESSION](https://t.me/Imshivaexe)
+- [MONGO_URI](https://mongodb.com)
