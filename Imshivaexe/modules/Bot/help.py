@@ -140,6 +140,25 @@ FUN_MSG = f"""
 ๏ `{hl}truth` » check by yourself..!!
 """
 
+PM_MSG = f"""
+**Pmpermit Commands**
+
+๏ `{hl}pmpermit` » to on/off pmpermit..!!
+
+๏ `{hl}a` » to approve user in pm..!!
+
+๏ `{hl}da` » to disapprove user in pm..!!
+"""
+
+NEWS_MSG = f"""
+** News Commands**
+
+๏ `{hl}news` » to get top headlines of news..!!
+
+๏ `{hl}weather (city name)` » to get weather information..!!
+"""
+
+
 HELP_BUTTON = IKM(
               [
               [
@@ -320,3 +339,17 @@ async def pange(client, message):
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
     await message.edit_message_text(text=FUN_MSG, reply_markup=BACK)
+
+@Bot.on_callback_query(filters.regex("pmpermit"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=PM_MSG, reply_markup=BACK_BUTTON)
+
+@Bot.on_callback_query(filters.regex("news"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=NEWS_MSG, reply_markup=BACK_BUTTON)
