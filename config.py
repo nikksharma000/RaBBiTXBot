@@ -45,9 +45,9 @@ WEATHER_API = os.getenv("WEATHER_API", "")
 if not WEATHER_API:
     WEATHER_API = "fadd97c7821d568d82f1cceaa06c7def"
     
-BLACKLIST_CHAT = int(getenv("BLACKLIST_CHAT", "-1002084534383")) # BLACKLISTED CHATS your telegram group id ( not necessary )
-if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1002084534383]
+BLACKLIST_CHAT = [
+    -1002084534383,
+]
 
 BIO = getenv("BIO", "")
 if not BIO:
