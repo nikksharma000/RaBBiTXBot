@@ -185,6 +185,8 @@ IMPORTANT_MSG = f"""
 **Important Commands**
 
 ๏ `{hl}restart` » to restart the bot..!!
+
+๏ `{hl}nice` » to save timer pic permanently in saved message..!!
 """
 
 Q_MSG = f"""
