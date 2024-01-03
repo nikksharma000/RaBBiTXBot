@@ -4,6 +4,8 @@
 
 [![RaBBiTX](https://telegra.ph//file/03dbb1cc7ba1ec537aba4.jpg)](https://t.me/Robotxupdates)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/Imshivaexe/RaBBiTXBot?utm_source=github.com&utm_medium=referral&utm_content=Imshivaexe/RaBBiTXBot&utm_campaign=Badge_Grade_Settings)
+![GitHub repo size](https://img.shields.io/github/repo-size/Imshivaexe/RaBBiTXBot)
 
 ## Repo Stats
 
