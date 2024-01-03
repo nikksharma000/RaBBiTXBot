@@ -169,6 +169,8 @@ CONVERT_MSG = f"""
 ๏ `{hl}getsticker` » to convert sticker to midea..!!
 
 ๏ `{hl}kang` » to convert midea to sticker..!!
+
+๏ `{hl}webss (url)` » to take any website ss..!!
 """
 
 INSTA_MSG = f"""
