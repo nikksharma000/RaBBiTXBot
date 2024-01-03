@@ -115,9 +115,6 @@ LOVE_MSG = f"""
 ๏ `{hl}eflirt` » check by yourself..!!
 
 ๏ `{hl}hflirt` » check by yourself..!!
-
-๏ `{hl}loveraid` » check by yourself..!!
-
 """
 
 FUN_MSG = f"""
