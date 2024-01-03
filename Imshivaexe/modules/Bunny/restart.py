@@ -3,7 +3,7 @@ import logging
 from os import environ, execle, remove
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from config import hl
+from config import HANDLER as hl
 from Imshivaexe import Bunny
 
 GEEK = None
