@@ -27,7 +27,9 @@
 
 <p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/Imshivaexe/RaBBiTXBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-
+## Sᴛᴀᴛᴜs Oғ Tʜɪs Bᴏᴛ
+<p align="left"><a href="https://github.com/Imshivaexe/RaBBiTXBot/network/members"><img src="https://img.shields.io/github/forks/Imshivaexe/RaBBiTXBot?label=Forks&logoColor=pink&style=social"></a><p align="left"><a href="https://github.com/Imshivaexe/RaBBITXBot/stargazers"><img src="https://img.shields.io/github/stars/Imshivaexe/RaBBiTXBot?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/Imshivaexe/RaBBiTBot"><img src="https://img.shields.io/github/last-commit/Imshivaexe/RaBBiTXBot?style=plastic"></a>
+      
 ## Features 
 
 >    we will provide docs soon..
