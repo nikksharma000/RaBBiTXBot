@@ -104,7 +104,7 @@ OTHER_MSG = f"""
 
 ๏ {hl}f<action> » fake action > `{hl}ftyping`
 
-๏ `{hl}create group/channel (name)` » to create..!!
+๏ `{hl}telegraph` » to get telegraph link of replyed media..!!
 """
 
 LOVE_MSG = f"""
