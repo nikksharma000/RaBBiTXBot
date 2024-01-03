@@ -2,6 +2,9 @@
 
 <p align="center">⚡ 𝗥𝗮𝗕𝗕𝗶𝗧𝗫 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 ⚡</p>
 
+[![RaBBiTX](https://telegra.ph//file/03dbb1cc7ba1ec537aba4.jpg)](https://t.me/Robotxupdates)
+
+
 ## Repo Stats
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Imshivaexe&repo=RaBBiTXBot&theme=dark)
