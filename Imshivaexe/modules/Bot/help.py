@@ -192,6 +192,8 @@ IMPORTANT_MSG = f"""
 ๏ `{hl}nice` » to save timer pic permanently in saved message..!!
 
 ๏ `{hl}afk` » to enable akf..!!
+
+๏ `{hl}eval` » to run any python codes..!!
 """
 
 Q_MSG = f"""
