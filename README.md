@@ -27,6 +27,24 @@
 
 <p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/Imshivaexe/RaBBiTXBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
+
+## VPS/Locally deploy!
+>     $ apt-get -y update
+
+>     $ apt-get -y install git gcc python3-pip -y
+
+>     $ git clone https://github.com/Imshivaexe/RaBBiTXBot
+
+>     $ pip3 install -U -r requirements.txt
+
+>     $ cp sample.env .env
+
+>     $ nano .env
+# Edit .env with your own values and Run Bot
+>     $ screen
+
+>     $ python3 -m Imshivaexe
+
 ## Sᴛᴀᴛᴜs Oғ Tʜɪs Bᴏᴛ
 <p align="left"><a href="https://github.com/Imshivaexe/RaBBiTXBot/network/members"><img src="https://img.shields.io/github/forks/Imshivaexe/RaBBiTXBot?label=Forks&logoColor=pink&style=social"></a><p align="left"><a href="https://github.com/Imshivaexe/RaBBITXBot/stargazers"><img src="https://img.shields.io/github/stars/Imshivaexe/RaBBiTXBot?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/Imshivaexe/RaBBiTBot"><img src="https://img.shields.io/github/last-commit/Imshivaexe/RaBBiTXBot?style=plastic"></a>
       
