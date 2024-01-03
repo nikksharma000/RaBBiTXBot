@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from config import HANDLER as hl
 from Imshivaexe import Bunny
+import asyncio
 
 @Bunny.on_message(filters.command("stupid", hl) & filters.me)
 async def stupid(client: Client, message: Message):
