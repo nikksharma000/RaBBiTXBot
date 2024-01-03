@@ -159,12 +159,48 @@ NEWS_MSG = f"""
 """
 
 CONVERT_MSG = f"""
+**Convert Commands**
 
 ๏ `{hl}tts` » to convert text to voice..!!
 
 ๏ `{hl}getsticker` » to convert sticker to midea..!!
 
 ๏ `{hl}kang` » to convert midea to sticker..!!
+"""
+
+INSTA_MSG = f"""
+**Insta Commands**
+
+๏ `{hl}download (url)` » to download any insta post/reels..!!
+
+"""
+
+INFO_MSG = f"""
+** Info Commands**
+
+๏ `{hl}info` » to get info about replyed user ACC..!!
+"""
+
+IMPORTANT_MSG = f"""
+**Important Commands**
+
+๏ `{hl}restart` » to restart the bot..!!
+"""
+
+Q_MSG = f"""
+**Q Commands**
+
+๏ `{hl}q` » to make q..!!
+
+๏ `{hl}ani` » to make animation q..!!
+"""
+
+CREATE_MSG = f"""
+**Create Commands**
+
+๏ `{hl}create group (name)` » to create group..!!
+
+๏ `{hl}create channel (name)` » to create channel..!!
 """
 
 HELP_BUTTON = IKM(
@@ -186,7 +222,7 @@ HELP_BUTTON = IKM(
               IKB("๏ convert ๏", callback_data='convert')
               ],
               [
-              IKB(" Home 🏠", callback_data='join')
+              IKB(" Home 🏠", callback_data='home')
               ]
               ]
               )
@@ -369,3 +405,59 @@ async def pange(client, message):
         return await message.answer("This Is Not For You Baka..!!", show_alert=True)
     await message.answer()
     await message.edit_message_text(text=CONVERT_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("home"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=HELP_TEXT, reply_markup=HELP_MARKUP)
+
+@Bot.on_callback_query(filters.regex("info"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=INFO_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("insta"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=INSTA_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("important"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=IMPORTANT_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("pmpermit"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=PM_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("news"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=NEWS_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("q"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=Q_MSG, reply_markup=X)
+
+@Bot.on_callback_query(filters.regex("create"))
+async def pange(client, message):
+    if message.from_user.id != Bunny.me.id:
+        return await message.answer("This Is Not For You Baka..!!", show_alert=True)
+    await message.answer()
+    await message.edit_message_text(text=CREATE_MSG, reply_markup=X)
