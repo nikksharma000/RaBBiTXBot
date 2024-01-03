@@ -105,6 +105,10 @@ OTHER_MSG = f"""
 ๏ {hl}f<action> » fake action > `{hl}ftyping`
 
 ๏ `{hl}telegraph` » to get telegraph link of replyed media..!!
+
+๏ `{hl}carbon` » to make carbon of given text..!!
+
+๏ `{hl}paste` » to paste any text and docs un media..!!
 """
 
 LOVE_MSG = f"""
@@ -127,6 +131,8 @@ FUN_MSG = f"""
 ๏ `{hl}iloveu` » check by yourself..!!
 
 ๏ `{hl}sex` » check by yourself..!!
+
+๏ `{hl}chance` » check by yourself..!!
 
 ๏ `{hl}kiss` » check by yourself..!!
 
@@ -184,6 +190,8 @@ IMPORTANT_MSG = f"""
 ๏ `{hl}restart` » to restart the bot..!!
 
 ๏ `{hl}nice` » to save timer pic permanently in saved message..!!
+
+๏ `{hl}afk` » to enable akf..!!
 """
 
 Q_MSG = f"""
