@@ -35,7 +35,7 @@ if not HELP_PIC:
 
 PM_PIC = os.getenv("PM_PIC", "")
 if not PM_PIC:
-    PM_PIC = "https://graph.org/file/cbe8e398c5d84587b7a34.jpg"
+    PM_PIC = "https://graph.org/file/ddaac37448e7d58602ae6.jpg"
 
 NEWS_API = os.getenv("NEWS_API", "")
 if not NEWS_API:
