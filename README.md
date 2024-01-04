@@ -17,7 +17,7 @@
 - [API_ID](https://my.telegram.org)
 - [API_HASH](https://my.telegram.org)
 - [TOKEN](https://t.me/Botfather)
-- [SESSION](https://t.me/StringGenerator_Bot)
+- [SESSION](https://t.me/Venom_String_robot)
 - [MONGO_URI](https://mongodb.com)
 - [HANDLER](https://t.me/Robotxupdates)
 
