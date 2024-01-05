@@ -5,14 +5,16 @@ from Imshivaexe import Bunny
 from Imshivaexe.powers import get_id_and_args
 
 @Bunny.on_message(filters.command("gban", hl) & filters.me)
-async def gban(client, message):
+async def ungban(client, message):
     try:
-        id, args = await get_id_and_args(client, messages)
+        id, args = await get_id_and_args(client, message)
+    except:
+        return await message.edit("`this is not a valid User..`")
     if await is_gbanned(id):
-        return await message.edit("`According to my database this User is already gbanned..`")
+        return await message.edit("`According to my database this User already gbanned..`")
     await gban(id)
-    await message.edit(f"**Successfully Gbanned** `{id}` !!")
-
+    await message.edit(f"**successfully gbanned** `{id}` !!")
+    
 @Bunny.on_message(filters.command("ungban", hl) & filters.me)
 async def ungban(client, message):
     try:
