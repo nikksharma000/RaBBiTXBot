@@ -8,8 +8,6 @@ from Imshivaexe.powers import get_id_and_args
 async def gban(client, message):
     try:
         id, args = await get_id_and_args(client, messages)
-    except:
-        return await message.edit("`This is not a valid user..`")
     if await is_gbanned(id):
         return await message.edit("`According to my database this User is already gbanned..`")
     await gban(id)
