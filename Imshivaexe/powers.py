@@ -13,8 +13,47 @@ import shlex
 from typing import Tuple
 from PIL import Image
 from pymediainfo import MediaInfo
+import time
+
+startTime = time.time()
 
 BASE = "https://batbin.me/"
+
+async def get_id_and_args(client, message):
+    if message.reply_to_message:
+        id = message.reply_to_message.from_user.id
+        if len(message.command) != 1:
+            args = message.text.split(None, 1)[1]
+        else:
+            args = None
+    else:
+        if len(message.command) > 1:
+            if len(message.command) < 3:
+                args = None
+            else:
+                args = message.text.split(None, 2)[2]
+            try:
+                id = int(message.text.split()[1])
+            except:
+                pass
+        if message.entities:
+            if len(message.command) < 3:
+                args = None
+            else:
+                args = message.text.split(None, 2)[2]
+            for x in message.entities:
+              if x.type.name == "MENTION":
+                txt = message.text.split()[1]
+                if txt[0] != "@":
+                    id = None
+                else:
+                    try:
+                        id = (await client.get_users(txt)).id
+                    except:
+                        id = None
+              elif x.type.name == "TEXT_MENTION":
+                id = x.user.id
+    return id, args
 
 async def get_id(client, message: Message):
     if str(message.chat.id)[0] != "-":
