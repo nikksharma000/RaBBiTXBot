@@ -30,6 +30,11 @@
             "required": true,
             "value": "."
         },
+        "LOGGER_ID": {
+            "description": "fill here your logger group id",
+            "required": true,
+            "value" : ""
+        },
         "MONGO_URI": {
             "description": "fill here your mongodb database url",
             "required": true,
