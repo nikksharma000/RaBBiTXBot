@@ -2,7 +2,7 @@ from Imshivaexe.Database.gban import *
 from pyrogram import Client, filters
 from config import HANDLER as hl
 from Imshivaexe import Bunny
-from Imshivaexe import get_id_and_args
+from Imshivaexe.powers import get_id_and_args
 
 @Bunny.on_message(filters.command("gban", hl) & filters.me)
 async def gban(client, message):
