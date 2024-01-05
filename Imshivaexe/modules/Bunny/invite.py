@@ -43,7 +43,7 @@ async def invteall(client: Client, message: Message):
                 await client.add_chat_members(tgchat.id, user.id)
             except Exception as e:
                 mg = await client.send_message(LOGGER_ID, f"**ᴇʀʀᴏʀ:** `{e}`")
-                await asyncio.sleep(10)
+                await asyncio.sleep(0.01)
                 await mg.delete()
 
 
