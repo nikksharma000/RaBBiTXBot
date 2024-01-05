@@ -1,5 +1,0 @@
-build:
-  docker:
-    RaBBiTX: Dockerfile
-run:
-  RaBBiTX: python3 -m Imshivaexe
